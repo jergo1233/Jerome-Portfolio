@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Jerome's portfolio showcasing projects, skills, and professional work in modern IT and web development.">
+        <meta name="title" content="Jerome's Portfolio | Modern IT & Web Development Projects">
+        <title>Jerome's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="asset/1.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Google Fonts -->
+         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <canvas id="bgCanvas"></canvas>
+        <header id="header">
+            <div class="container">
+                <nav>
+                    <a href="#home" class="logo">Port
+                        <span style="color:#fff;">folio</span>
+                    </a>
+                    <ul class="nav-links" id="nav-links">
+                        <div class="hamburger1" onclick="toggleMenu()">
+                            <img id="close" src="asset/undo.png" alt="mennu" width="30px" style="margin-left: 10px; filter: drop-shadow(3px 2px 1px rgb(31, 0, 165));">
+                        </div>
+                        <li class="navs">
+                            <a href="#home" onclick="closeMenu()">Home</a>
+                        </li>
+                        <li class="navs">
+                            <a href="#projects" onclick="closeMenu()">Projects</a>
+                        </li>
+                        <li class="navs">
+                            <a href="#services" onclick="closeMenu()">My Services</a>
+                        </li>
+                        <li class="navs">
+                            <a href="#skills" onclick="closeMenu()">Skills</a>
+                        </li>
+                        <li class="navs">
+                            <a href="#about" onclick="closeMenu()">About</a>
+                        </li>
+                        <li class="navs">
+                            <a href="#contact" onclick="closeMenu()">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <img src="asset/mnu.png" alt="mennu">
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Hero Section (Home) -->
+        <section id="home">
+            <div class="container hero-container">
+                <!-- Profile Image visible right away -->
+                <div class="hero-content">
+                    <img src="asset/1.jpg" alt="" class="picture">
+                    <h3>Hello, It's Me</h3>
+                    <h1 class="name">Jerome G. Urbano</h1>
+                    <h2>A Passionate
+                        <span id="typing-text">Frontend Developer</span>
+                    </h2>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1AsWhgcpfT/">
+                            <img src="asset/fb.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/jergo.urbano?igsh=YzljYTk1ODg3Zg==">
+                            <img src="asset/in.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jerome-urbano-4baa51436" target="_blank">
+                            <img src="asset/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://wa.me/1234567890">
+                            <img src="asset/wat.png" alt="WhatsApp">
+                        </a>
+                        <a href="https://github.com/jergo1233" target="_blank">
+                            <img src="asset/github.png" alt="GitHub">
+                        </a>
+                    </div>
+                    <a href="myinfo.html" target="_blank" class="btn">More about me</a>
+                </div>
+            </div>
+            <div class="container hero-container">
+                <img src="asset\1.jpg" alt="My Profile" class="hero-profile-img">
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container reveal">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-wrapper">
+                   
+                    <div class="project-card">
+                        <a href="index.html">
+                            <img src="asset/portfolio.png" alt="Proj" class="project-img">
+                        </a>
+                        <div class="project-info">
+                            <h3>My Portfolio</h3>
+                            <p class="project-desc">Dashboard displaying real-time AI usage statistics.
+                                <span class="github-tooltip">
+                                    <a href="https://github.com/jergo1233/Jerome-Portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                    </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <a href="https://github.com/jergo1233/Vehicle-registration" target="_blank" title="Standalone System">
+                            <img src="asset/adminPage1.png" alt="Proj" class="project-img">
+                        </a>
+                            <div class="project-info">
+                                <h3>Vehicle Registration Record Management System</h3>
+                                <p class="project-desc">Dashboard displaying real-time AI usage statistics.
+                                    <span class="github-tooltip">
+                                    <a href="https://github.com/jergo1233/Vehicle-registration" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                    </span>
+                                </p>
+                            </div>
+                    </div>
+                   
+                    <div class="project-card">
+                        <a href="https://randghiefurniture.kesug.com/" target="_blank">
+                            <img src="asset/ginsfurniturexcf.png" alt="Proj" class="project-img">
+                        </a>
+                        <div class="project-info">
+                            <h3>R and GHIE Furniture Website</h3>
+                            <p class="project-desc">Showcasing all product of G.U. Furniture in Odiongan, Romblon.
+                                <span class="github-tooltip">
+                                    <a href="https://github.com/jergo1233/GinsFurnitures" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                    </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="threeD">
+            <div class="container reveal">
+                <h2 class="section-title">Personal
+                    <span style="color:orange;">3D</span> Modeling Projects
+                </h2>
+                <p id="textboring">I am a front-end developer focus on building responsive and user-friendly websites using HTML, CSS, and basic JAVASCRIPT. In addition to web development, i  also practice 3D modeling in
+                    <span style="color: orange;">Blender</span> to strengthen my visual and creative skills. While my 3D projects are independent works, they demonstrate assets that can be adapted for digital and web use.
+                </p>
+                <div class="projects-wrapper">
+                    <div class="project-card">
+                        <a href="laptop.html" target="_blank">
+                            <img src="asset/Toshiba Laptop.png" alt="Proj" class="project-img">
+                            
+                        </a>
+                        <div class="project-info">
+                                <h3>3D Dynabook</h3>
+                                <p>I created and rendered a 3D model of a Dynabook laptop in Blender as a detailed product visualization.</p>
+                            </div>
+                    </div>
+                    <div class="project-card">
+                        <a href="tank.html" target="_blank">
+                            <img src="asset/final tank.png" alt="Proj" class="project-img">
+                        </a>
+                        <div class="project-info">
+                            <h3>M1 Abrams Blender 3D Model</h3>
+                            <p>M1 Abrams 3D model created in Blender featuring detailed armor, realistic proportions, and a military-inspired design.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <a href="restaurant.html" target="_blank">
+                            <img src="asset/pinays restaurant.png" alt="Proj" class="project-img">
+                        </a>
+                        <div class="project-info">
+                            <h3>Pinays Restaurant</h3>
+                            <p>3D Interior Restaurant Scene.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <a href="dreamHouse.html" target="_blank">
+                            <img src="asset/final 1.png" alt="Proj" class="project-img">
+                        </a>
+                        <div class="project-info">
+                            <h3>Modern Minimal 3D House Design</h3>
+                            <p>A simple modern house created and rendered in Blender with a clean, minimal style.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <a href="twoStoryHouse.html" target="_blank">
+                            <img src="asset/house 1.png" alt="Proj" class="project-img">
+                        </a>
+                        <div class="project-info">
+                            <h3>Modern Two-Storey House Design</h3>
+                            <p>A modern two-storey house model created and rendered in Blender with a clean architectural style.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-s" id="services">
+            <div class="skill-container">
+                <div class="skills-list">
+                    <h2 class="skill-title"> My
+                        <span style="color: aqua;">services</span>
+                    </h2>
+                    <div class="projectcons">
+                        <div class="item2">
+                            <h1 style="color:rgb(207, 96, 5)" align="center">&lt;&gt;</h1>
+                            <div id="ui">
+                                <br>
+                                <h5 style="color:aqua">UI/UX Design</h5>
+                                <p>I provide professional UI/UX design services focused on intuitive, austhetic and fucntional user interfaces. I ensure designs that are visually appailing and effective in achieving your business goals for websites, mobile applications, and offer digital platform,</p>
+                            </div>
+                        </div>
+                        <div class="item2">
+                            <div id="ui1" align="center">
+                                <img
+                                    src="data:image/svg+xml;utf8,
+                      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='50' height='50'>
+                        <g fill='none' stroke='%2300FFFF' stroke-width='8' stroke-linecap='round'>
+                          <path d='M10,20 L50,20 L50,60'/>
+                          <path d=' L50,80 L50,40'/>
+                          <path d='M20,10 L20,50 L60,50'/>
+                          <path d=' L80,50 L40,50'/>
+                        </g>
+                      </svg>"
+                                    alt="Crop Icon Crossing"
+                                    width="50"
+                                    height="50"
+                                >
+                                <h5 style="color:aqua">Graphic Design</h5>
+                                <p>I provide  creative graphic design services that will bring your ideas to life into stunning visual masterpieses. I ensure each design is not only aesthetic, but also effective in conveying a message, i am ready to help you  a strong and memorable visual idintity.</p>
+                            </div>
+                        </div>
+                        <div class="item2">
+                            <div id="ui2" align="center">
+                                <br>
+                                <img class="vs"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"
+                                    alt="VS Code Icon"
+                                    width="25"
+                                    height="30"
+                                >
+                                <br>
+                                <h5 style="color:aqua">Frontend Dev</h5>
+                                <p>I offer frontend development services that focus on creating attractive and resposive user interface. With expertise in HTML, CSS, and JAVASCRIPT. I'm committed to ensuring that every project not only looks great but also function wellacroos variety of devices and browsers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-quote">
+                    <img src="asset/hi.png" alt="Illustration" class="hi-image">
+                    <div class="logo-container">
+                        <div class="lines">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="logo-text">Don’t stop until your dream becomes your reality.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container reveal">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="skillsStatement">I specialize in front-end web development. creating responsive and visualy engaging websites using HTML, CSS, Taiwind CSS, JavaScript and react. Whith Cise for fast builds and Git for version controll. I deliver everything from static sites to single-page applications focused on performance, accessibility, and greate user experience.</p>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">HTML
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">CSS
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">JavaScript
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap">Bootstrap
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">Figma
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">Git
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container reveal">
+                <h2 class="section-title">Others</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">Java
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">SQL
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg" alt="Photoshop">Photoshop
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">C++
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender">Blender
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg" alt="MS Excel" style="filter: invert(26%) sepia(89%) saturate(1589%) hue-rotate(89deg) brightness(95%) contrast(85%);">MsExcel
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftword.svg" alt="MS Word" style="filter: invert(18%) sepia(89%) saturate(3802%) hue-rotate(199deg) brightness(92%) contrast(90%);">MsWord
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.php.net/images/logos/php-logo.svg" alt="PHP Logo">PHP
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart Logo">Dart
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter Logo">Flutter
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="aboutme-content">
+                <h2 class="section-title text-center">About Me</h2>
+                <div class="about-flex">
+                    <div class="profile-pic-container">
+                        <img class="profile" src="asset/1.jpg" alt="Jerome's Profile Picture">
+                    </div>
+                    <div class="text-info-about">
+                        <br>
+                        <br>
+                        <br>
+                        <p>My name is Jerome Urbano, a Bachelor of Science in Information Technology student from Romblon State University (RSU) with a deep passion for information technology and digital creativity. I’m fascinated by how technology shapes user experiences and how design can make digital interactions more intuitive and engaging. With a strong foundation in front-end development and UI/UX design, I strive to create visually appealing, user-centered, and responsive web interfaces that bring ideas to life.</p>
+                        <div class="more">
+                            <center>
+                                <a href="Jerome Urbano.pdf"  target="_blank" class="more-about-me-btn">Download my resume</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container reveal">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-info">I'm glad you visit my personal portfolio! I would genuinely love to hear from you if you have any questions, suggestions, or simply want to talk about a possible collaboration. My email is always open, whether it's a business opportunity or something creative. Don't hesitate to message me; sometimes a straightforward discussion is the first step toward the best things. Together, let's create something fantastic.</p>
+                <div class="more">
+                    <center>
+                        <h2 class="more-about-me-btn2">Contact Me</h2>
+                    </center>
+                </div>
+                <div class="contact-info">
+                    <p>
+                        <img src="asset/2.png" alt="Email Icon" class="contact-icon">
+                        <a href="mailto:jeromeurbano41@gmail.com">jeromeurbano41@gmail.com</a>
+                    </p>
+                    <p>
+                        <img src="asset/3.png" alt="Phone Icon" class="contact-icon"> +63 956-027-3149
+                    </p>
+                    <p>
+                        <img src="asset/4.png" alt="Messenger Icon" class="contact-icon">
+                        <a href="https://m.me/jerome.urbano.140?source=qr_link_share">Jerome Urbano</a>
+                    </p>
+                </div>
+                <div class="contact-form">
+        <div class="form-group">
+        <input type="text" id="cName" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+            <textarea id="cMsg" placeholder="Message or rough notes..." required></textarea>
+             </div>
+             <!-- Anti-spam Honeypot (Nakatago sa mga totoong tao) -->
+<input type="checkbox" id="botCheck" style="display: none;" tabindex="-1" autocomplete="off">
+             <button id="sendBtn" class="btn" type="button" style="width:100%;">Send</button>
+            </div>
+               
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2025 Portfolio. Jerome G. Urbano All Rights Reserved.</p>
+        </footer>
+        <div class="back-to-top" onclick="swipeUp();">
+            <img src="asset/1.1.png" alt="1.1image" id="up">
+        </div>
+        <script src="script.js"></script>
+        <script src="popuptext.js"></script>
+    </body>
+</html>
