@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jerome's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="asset/1.png">
-    <link rel="stylesheet" href="myinforyou.css">
+    <link rel="stylesheet" href="myinforyou.css?v=2.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
    
 </head>
@@ -149,11 +149,13 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 800,
-            once: true,
-        });
-
+       AOS.init({
+        duration: 800,
+        once: true,
+        disableMutationObserver: false,
+        // ETO ANG DAGDAG: Isasara ang AOS sa maliliit na mobile screens para hindi masira ang layout
+        disable: window.innerWidth < 768 
+    }); 
         const certificateItems = document.querySelectorAll('.certificate-item');
         const certificateModal = document.getElementById('certificate-modal');
         const modalImage = document.getElementById('modal-image');
