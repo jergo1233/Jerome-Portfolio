@@ -30,3 +30,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.querySelectorAll('.project-info.has-popup').forEach(card => {
+    let timer;
+    const popup = card.querySelector('.popup-viewer');
+
+    card.addEventListener('click', (e) => {
+        // Kung ang pinindot ay mismong popup link na, hayaang mag-navigate sa URL
+        if (e.target.classList.contains('popup-viewer')) return;
+
+        // I-check kung mobile view (screen width <= 768px)
+        if (window.innerWidth <= 768) {
+            clearTimeout(timer);
+
+            // I-toggle o ipakita ang popup
+            popup.classList.add('show-popup');
+
+            // Timer: Mawawala ang popup pagkalipas ng 2.5 seconds (2500ms)
+            timer = setTimeout(() => {
+                popup.classList.remove('show-popup');
+            }, 2500);
+        }
+    });
+});

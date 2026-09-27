@@ -1750,3 +1750,81 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 }
+
+.project-info.has-popup {
+    position: relative;
+    cursor: pointer; /* Para alam ng user sa mobile na pwedeng i-tap */
+}
+
+/* Base Style ng Popup Tooltip (DEFAULT: WHITE TEXT) */
+.popup-viewer {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(5px);
+    
+    background-color: #2b282e;
+    border-radius: 8px;
+    padding: 6px 14px;
+    
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    
+    opacity: 0;
+    visibility: hidden;
+    
+    /* Transition at Delay sa Desktop */
+    transition: opacity 0.3s ease 0.5s, visibility 0.3s ease 0.5s, transform 0.3s ease 0.5s, color 0.2s ease, text-shadow 0.2s ease;
+    z-index: 10;
+}
+
+/* Arrow sa ilalim ng popup */
+.popup-viewer::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #2b282e transparent transparent transparent;
+}
+
+/* Class na idadagdag ng JS kapag pino-popup */
+.popup-viewer.show-popup {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateX(-50%) translateY(-6px) !important;
+    transition-delay: 0s !important;
+}
+
+/* DESKTOP HOVER (Gagana pa rin sa PC/Laptop) */
+@media (min-width: 769px) {
+    .project-info.has-popup:hover .popup-viewer {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(-6px);
+        transition-delay: 0s; 
+    }
+
+    .popup-viewer:hover {
+        color: #ffee00;
+        text-shadow: 0 0 8px rgba(255, 238, 0, 0.8);
+    }
+}
+
+/* MOBILE VIEW (Nakatago By Default) */
+@media (max-width: 768px) {
+    .popup-viewer {
+        /* Nananatiling popup position pa rin sa mobile sa itaas ng description */
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    }
+}
